@@ -1,10 +1,9 @@
-#include "src/valid-parentheses/solution.cpp"
 #include <iostream>
 #include <vector>
+#include "src/valid-parentheses/solution.cpp"
 using namespace std;
 
 int main() {
-
   auto sol = Solution();
 
   cout << sol.isValid("{}([{}])[]") << endl;
