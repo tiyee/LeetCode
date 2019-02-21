@@ -39,10 +39,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/Cellar/cmake/3.13.3/bin/cmake
+CMAKE_COMMAND = /usr/local/Cellar/cmake/3.13.4/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/Cellar/cmake/3.13.3/bin/cmake -E remove -f
+RM = /usr/local/Cellar/cmake/3.13.4/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /Users/jiangtao/github/LeetCode/output/build-LeetCode-unknown
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/local/Cellar/cmake/3.13.3/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/local/Cellar/cmake/3.13.4/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/local/Cellar/cmake/3.13.3/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/usr/local/Cellar/cmake/3.13.4/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -123,32 +123,32 @@ LeetCode/fast:
 	$(MAKE) -f CMakeFiles/LeetCode.dir/build.make CMakeFiles/LeetCode.dir/build
 .PHONY : LeetCode/fast
 
-src/two-sum/solution.o: src/two-sum/solution.cpp.o
+src/longest-palindromic-substring/solution.o: src/longest-palindromic-substring/solution.cpp.o
 
-.PHONY : src/two-sum/solution.o
+.PHONY : src/longest-palindromic-substring/solution.o
 
 # target to build an object file
-src/two-sum/solution.cpp.o:
-	$(MAKE) -f CMakeFiles/LeetCode.dir/build.make CMakeFiles/LeetCode.dir/src/two-sum/solution.cpp.o
-.PHONY : src/two-sum/solution.cpp.o
+src/longest-palindromic-substring/solution.cpp.o:
+	$(MAKE) -f CMakeFiles/LeetCode.dir/build.make CMakeFiles/LeetCode.dir/src/longest-palindromic-substring/solution.cpp.o
+.PHONY : src/longest-palindromic-substring/solution.cpp.o
 
-src/two-sum/solution.i: src/two-sum/solution.cpp.i
+src/longest-palindromic-substring/solution.i: src/longest-palindromic-substring/solution.cpp.i
 
-.PHONY : src/two-sum/solution.i
+.PHONY : src/longest-palindromic-substring/solution.i
 
 # target to preprocess a source file
-src/two-sum/solution.cpp.i:
-	$(MAKE) -f CMakeFiles/LeetCode.dir/build.make CMakeFiles/LeetCode.dir/src/two-sum/solution.cpp.i
-.PHONY : src/two-sum/solution.cpp.i
+src/longest-palindromic-substring/solution.cpp.i:
+	$(MAKE) -f CMakeFiles/LeetCode.dir/build.make CMakeFiles/LeetCode.dir/src/longest-palindromic-substring/solution.cpp.i
+.PHONY : src/longest-palindromic-substring/solution.cpp.i
 
-src/two-sum/solution.s: src/two-sum/solution.cpp.s
+src/longest-palindromic-substring/solution.s: src/longest-palindromic-substring/solution.cpp.s
 
-.PHONY : src/two-sum/solution.s
+.PHONY : src/longest-palindromic-substring/solution.s
 
 # target to generate assembly for a file
-src/two-sum/solution.cpp.s:
-	$(MAKE) -f CMakeFiles/LeetCode.dir/build.make CMakeFiles/LeetCode.dir/src/two-sum/solution.cpp.s
-.PHONY : src/two-sum/solution.cpp.s
+src/longest-palindromic-substring/solution.cpp.s:
+	$(MAKE) -f CMakeFiles/LeetCode.dir/build.make CMakeFiles/LeetCode.dir/src/longest-palindromic-substring/solution.cpp.s
+.PHONY : src/longest-palindromic-substring/solution.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... LeetCode"
-	@echo "... src/two-sum/solution.o"
-	@echo "... src/two-sum/solution.i"
-	@echo "... src/two-sum/solution.s"
+	@echo "... src/longest-palindromic-substring/solution.o"
+	@echo "... src/longest-palindromic-substring/solution.i"
+	@echo "... src/longest-palindromic-substring/solution.s"
 .PHONY : help
 
 

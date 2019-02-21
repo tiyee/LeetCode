@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/LeetCode.dir/src/two-sum/solution.cpp.o"
+  "CMakeFiles/LeetCode.dir/src/longest-palindromic-substring/solution.cpp.o"
   "../../bin/LeetCode.pdb"
   "../../bin/LeetCode"
 )
