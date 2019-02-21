@@ -1,3 +1,0 @@
-/Users/jiangtao/github/LeetCode/output/build-LeetCode-unknown-Default/CMakeFiles/rebuild_cache.dir
-/Users/jiangtao/github/LeetCode/output/build-LeetCode-unknown-Default/CMakeFiles/edit_cache.dir
-/Users/jiangtao/github/LeetCode/output/build-LeetCode-unknown-Default/CMakeFiles/LeetCode.dir
