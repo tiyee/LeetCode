@@ -1,20 +1,20 @@
 #include <iostream>
+#include <unordered_map>
 #include <vector>
 using namespace std;
 
 class Solution {
  public:
   vector<int> twoSum(vector<int>& nums, int target) {
-    vector<int> ret(2, 0);
-    for (unsigned long i = 0; i < nums.size(); i++) {
-      for (unsigned long j = i + 1; j < nums.size(); j++) {
-        if (nums[i] + nums[j] == target) {
-          ret[0] = static_cast<int>(i);
-          ret[1] = static_cast<int>(j);
-          return ret;
-        }
+    unordered_map<int, int> m;
+    for (int i = 0; i < nums.size(); i++) {
+      auto got = m.find(target - nums[i]);
+      if (got == m.end()) {
+        m[nums[i]] = i;
+      } else {
+        return vector<int>{got->second, i};
       }
     }
-    return ret;
+    return vector<int>{-1, -1};
   }
 };
