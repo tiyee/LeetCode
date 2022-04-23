@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 
-#include "src/longest-common-prefix/solution.cpp"
+#include "src/linked-list-cycle/solution.cpp"
 using namespace std;
 void render(int x) { cout << x << endl; }
 void render(double x) { cout << x << endl; }
@@ -16,7 +16,5 @@ int main() {
   auto sl = Solution();
   vector<string> strs = {"flower", "flow", "flight"};
 
-  auto s = sl.longestCommonPrefix(strs);
-  render(s);
   return 0;
 }

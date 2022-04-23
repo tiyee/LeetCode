@@ -18,7 +18,7 @@ struct ListNode {
 class Solution {
  public:
   ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
-    ListNode* ret = new ListNode();
+    ListNode* ret = new ListNode(0);
     ListNode* tmp = ret;
 
     while (list1 != nullptr && list2 != nullptr) {
@@ -26,7 +26,7 @@ class Solution {
         tmp->next = list1;
         list1 = list1->next;
       } else {
-        tmp = list2;
+        tmp->next = list2;
         list2 = list2->next;
       }
       tmp = tmp->next;
