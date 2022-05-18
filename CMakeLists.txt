@@ -4,6 +4,6 @@ project(LeetCode)
 add_compile_options(-std=c++11)
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 SET(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
-FILE(GLOB SRC_LIST  "src/sqrtx/solution.cpp" )
+FILE(GLOB SRC_LIST  "src/merge-sorted-array/solution.cpp" )
 
 add_executable(${PROJECT_NAME} main.cpp   ${SRC_LIST})

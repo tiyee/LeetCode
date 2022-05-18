@@ -1,12 +1,20 @@
 #include <vector>
 
-using std::vector;
 class Solution {
  public:
   int mySqrt(int x) {
-    int i = 1;
-    while (i * i < x) {
-      i = (i + x / 2) / 2;
+    if (x < 2) {
+      return x;
     }
+    int left = 0, right = x, i;
+    while (left + 1 < right) {
+      int i = (left + right) / 2;
+      if (x / i < i) {
+        right = i;
+      } else {
+        left = i;
+      }
+    }
+    return left;
   }
 };

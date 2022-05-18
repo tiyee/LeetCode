@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 
-#include "src/linked-list-cycle/solution.cpp"
+#include "src/merge-sorted-array/solution.cpp"
 using namespace std;
 void render(int x) { cout << x << endl; }
 void render(double x) { cout << x << endl; }
