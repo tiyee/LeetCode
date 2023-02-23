@@ -13,8 +13,6 @@ void render(vector<int> nums) {
 }
 
 int main() {
-  auto sl = Solution();
-  vector<string> strs = {"flower", "flow", "flight"};
-
+  run();
   return 0;
 }
