@@ -8,7 +8,7 @@ class Solution {
  public:
   int maxArea(vector<int>& height) {
     int left = 0;
-    int right = height.size();
+    int right = height.size() - 1;
     int aus = 0;
     while (left < right) {
       aus = max(aus, (right - left) * min(height[left], height[right]));
