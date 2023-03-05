@@ -1,4 +1,5 @@
-
+#include <cmath>
+#include <iostream>
 class Solution {
  public:
   /**
@@ -18,4 +19,20 @@ class Solution {
     }
     return c;
   }
+  int fab(int n) {
+    if (n < 3) return n - 1;
+    auto a1 = std::pow((1 + std::sqrt(5.0)) / 2, n);
+    auto a2 = std::pow((1 - std::sqrt(5.0)) / 2, n);
+    auto x = (1 / std::sqrt(5.0)) * (a1 - a2);
+
+    return int(x);
+  }
 };
+
+int main() {
+  for (int i = 1; i < 30; i++) {
+    Solution().fab(i);
+  }
+
+  return 0;
+}
