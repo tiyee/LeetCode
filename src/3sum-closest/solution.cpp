@@ -16,8 +16,7 @@ class Solution {
     sort(nums.begin(), nums.end(), less<int>());
     int result = nums[0] + nums[1] + nums[2];
     for (size_t i = 0; i < size - 2; ++i) {
-      // if (nums[i] > target && result > target) break;
-      while (i > 0 && nums[i] == nums[i - 1]) {
+      while (i > 0 && i < size - 2 && nums[i] == nums[i - 1]) {
         ++i;
       }
       auto left = i + 1;
